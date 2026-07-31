@@ -2,103 +2,103 @@
 
 int main()
 {
-    //int week;
-    //printf("输入当前星期\n");
-    //scanf("%d", &week);
-    //switch(week)
-    //{
-    //    case 1:
-    //        printf("克洛琳德");
-    //        break;
-    //    case 2:
-    //        printf("阿蕾奇诺");
-    //        break;
-    //    case 3:
-    //        printf("九条裟罗");
-    //        break;
-    //    case 4:
-    //        printf("莱欧斯利");
-    //        break;
-    //    case 5:
-    //        printf("那维莱特");
-    //        break;
-    //    case 6:
-    //        printf("枫原万叶");
-    //        break;
-    //    case 7:
-    //        printf("哥伦比娅");
-    //        break;
-    //    default:
-    //        printf("不存在的星期！");
-    //        break;
-    //}
+    int week;
+    printf("输入当前星期\n");
+    scanf("%d", &week);
+    switch(week)
+    {
+        case 1:
+            printf("克洛琳德");
+            break;
+        case 2:
+            printf("阿蕾奇诺");
+            break;
+        case 3:
+            printf("九条裟罗");
+            break;
+        case 4:
+            printf("莱欧斯利");
+            break;
+        case 5:
+            printf("那维莱特");
+            break;
+        case 6:
+            printf("枫原万叶");
+            break;
+        case 7:
+            printf("哥伦比娅");
+            break;
+        default:
+            printf("不存在的星期！");
+            break;
+    }
 
-    ///*
-    //case穿透的应用：
-    //需求：键盘录入月份数，输出对应的季节
-    //春季：3、4、5 月份
-    //夏季：6、7、8 月份
-    //秋季：9、10、11 月份
-    //冬季：12 月份到次年的 2 月份
-    //*/
-    //int month;
-    //printf("输入当前月份\n");
-    //scanf("%d", &month);
-    //switch (month)
-    //{
-    //    case 3:
-    //    case 4:
-    //    case 5:
-    //        printf("春季");
-    //        break;
-    //    case 6:
-    //    case 7:
-    //    case 8:
-    //        printf("夏季");
-    //        break;
-    //    case 9:
-    //    case 10:
-    //    case 11:
-    //        printf("秋季");
-    //        break;
-    //    case 12:
-    //    case 1:
-    //    case 2:
-    //        printf("冬季");
-    //        break;
-    //    default:
-    //        printf("不存在的月份！");
-    //        break;
-    //}
+    /*
+    case穿透的应用：
+    需求：键盘录入月份数，输出对应的季节
+    春季：3、4、5 月份
+    夏季：6、7、8 月份
+    秋季：9、10、11 月份
+    冬季：12 月份到次年的 2 月份
+    */
+    int month;
+    printf("输入当前月份\n");
+    scanf("%d", &month);
+    switch (month)
+    {
+        case 3:
+        case 4:
+        case 5:
+            printf("春季");
+            break;
+        case 6:
+        case 7:
+        case 8:
+            printf("夏季");
+            break;
+        case 9:
+        case 10:
+        case 11:
+            printf("秋季");
+            break;
+        case 12:
+        case 1:
+        case 2:
+            printf("冬季");
+            break;
+        default:
+            printf("不存在的月份！");
+            break;
+    }
 
-    ////求1~100的偶数和
-    //int sum = 0;
-    //for (int i = 2; i <= 100; i+=2)
-    //{
-    //    sum += i;
-    //}
-    //printf("%d", sum);
+    //求1~100的偶数和
+    int sum = 0;
+    for (int i = 2; i <= 100; i+=2)
+    {
+        sum += i;
+    }
+    printf("%d", sum);
 
-    ///*
-    //## 统计满足条件的数字
-    //需求：键盘录入两个数字，表示一个范围,统计这个范围中既能被6整除又能被8整除数字有多少个？
-    //*/
-    //int count = 0;
-    //int start;
-    //int end;
-    //printf("输入两个数字表示范围\n");
-    //scanf("%d %d", &start, &end);
-    ////考虑start可能大于end的情况
-    //int min = start <= end ? start : end;
-    //int max = start > end ? start : end;
-    //for (int i = min; i <= max; i++)
-    //{
-    //    if (i % 6 == 0 && i % 8 == 0)
-    //    {
-    //        count++;
-    //    }
-    //}
-    //printf("在这个范围中，既能被6整除又能被8整除数字有%d个", count);
+    /*
+    ## 统计满足条件的数字
+    需求：键盘录入两个数字，表示一个范围,统计这个范围中既能被6整除又能被8整除数字有多少个？
+    */
+    int count = 0;
+    int start;
+    int end;
+    printf("输入两个数字表示范围\n");
+    scanf("%d %d", &start, &end);
+    //考虑start可能大于end的情况
+    int min = start <= end ? start : end;
+    int max = start > end ? start : end;
+    for (int i = min; i <= max; i++)
+    {
+        if (i % 6 == 0 && i % 8 == 0)
+        {
+            count++;
+        }
+    }
+    printf("在这个范围中，既能被6整除又能被8整除数字有%d个", count);
 
 
     //简单循环算法题练习
